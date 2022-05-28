@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "auteurs",
+  "info": {
+    "singularName": "auteur",
+    "pluralName": "auteurs",
+    "displayName": "realisateur",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nom": {
+      "type": "string"
+    },
+    "films": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::film.film",
+      "mappedBy": "realisateur"
+    }
+  }
+}

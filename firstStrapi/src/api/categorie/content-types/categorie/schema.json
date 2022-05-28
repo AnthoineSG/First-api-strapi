@@ -1,17 +1,17 @@
 {
   "kind": "collectionType",
-  "collectionName": "articles",
+  "collectionName": "categories",
   "info": {
-    "singularName": "article",
-    "pluralName": "articles",
-    "displayName": "article"
+    "singularName": "categorie",
+    "pluralName": "categories",
+    "displayName": "categorie"
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "titre": {
+    "title": {
       "type": "string"
     }
   }

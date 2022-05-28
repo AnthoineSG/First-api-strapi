@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "villes",
+  "info": {
+    "singularName": "ville",
+    "pluralName": "villes",
+    "displayName": "ville",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nom": {
+      "type": "string"
+    },
+    "films": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::film.film",
+      "mappedBy": "villes"
+    }
+  }
+}
